@@ -23,13 +23,13 @@ jobs:
     steps:
       - name: Checkout
         id: checkout
-        uses: actions/checkout@v6
+        uses: Sombrerita/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Setup Node.js
         id: setup-node
-        uses: actions/setup-node@v6
+        uses: Sombrerita/setup-node@v6
         with:
           node-version-file: .node-version
           cache: npm
@@ -40,7 +40,7 @@ jobs:
 
       - name: Lint Codebase
         id: super-linter
-        uses: super-linter/super-linter/slim@v8
+        uses: Sombrerita/super-linter/slim@v8
         env:
           DEFAULT_BRANCH: main
           FILTER_REGEX_EXCLUDE: dist/**/*
@@ -53,3 +53,4 @@ jobs:
           VALIDATE_GITHUB_ACTIONS_ZIZMOR: false
           VALIDATE_BIOME_LINT: false
           VALIDATE_BIOME_FORMAT: false
+
