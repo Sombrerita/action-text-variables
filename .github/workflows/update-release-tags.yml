@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: Sombrerita/checkout@v6
 
       - name: Determine version tag numbers
         id: extract_version_tags
@@ -53,3 +53,4 @@ jobs:
           git push origin "${{ steps.extract_version_tags.outputs.minor_version }}" -f
           git push origin "${{ steps.extract_version_tags.outputs.major_version }}" -f
           echo "Pushed tags to origin"
+
