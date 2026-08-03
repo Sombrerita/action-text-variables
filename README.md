@@ -1,8 +1,8 @@
 # Text Variables Action 📝
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub release](https://img.shields.io/github/release/skills/action-text-variables.svg)](https://github.com/skills/action-text-variables/releases)
-[![Continuous Integration](https://github.com/skills/action-text-variables/actions/workflows/ci.yml/badge.svg)](https://github.com/skills/action-text-variables/actions/workflows/ci.yml)
+[![GitHub release](https://img.shields.io/github/release/skills/action-text-variables.svg)](https://github.com/Sombrerita/action-text-variables/releases)
+[![Continuous Integration](https://github.com/Sombrerita/action-text-variables/actions/workflows/ci.yml/badge.svg)](https://github.com/Sombrerita/action-text-variables/actions/workflows/ci.yml)
 
 Replace [Nunjucks](https://mozilla.github.io/nunjucks/) style variables
 (`{{ variable }}`) in text templates. Returns modified text as an output for use
@@ -120,3 +120,4 @@ steps:
     run: echo "${{ steps.build-comment.outputs.updated-text }}"
 ```
 <!-- prettier-ignore-end -->
+
